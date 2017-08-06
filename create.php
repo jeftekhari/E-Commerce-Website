@@ -27,7 +27,7 @@ if ($login && $password && $submit && $submit == "OK")
 				$taken = 1;
 		}
 	}
-	if (8 > (strlen($tmp['login'])))
+	if (strlen($tmp['login'] > 8))
 	{
 		echo "<h1>8 Characters Maximum Please</h1>";
 		echo '<html>';
