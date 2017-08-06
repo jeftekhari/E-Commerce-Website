@@ -20,6 +20,14 @@ if ($login && $password && $submit && $submit == "OK")
 				$taken = 1;
 		}
 	}
+	if (8 > (strlen($tmp['login'])))
+	{
+		echo "8 Characters Maximum Please";
+		echo '<html>';
+		echo '</br><a href="create.html">Retry</a>';
+		echo '</html>';
+		return FALSE;
+	}
 	if ($taken)
 	{
 		echo "That Username is taken.\n";
@@ -33,6 +41,8 @@ if ($login && $password && $submit && $submit == "OK")
 		$contents[] = $tmp;
 		file_put_contents('../private/passwd', serialize($contents));
 		echo "OK\n";
+		echo '<html>';
+		echo '</br><a href="login.html">Login Home</a>';
 	}
 }
 else
