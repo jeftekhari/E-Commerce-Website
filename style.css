@@ -22,3 +22,13 @@ a{
 .bigger {
 	font-size:100%;
 }
+.base {
+ border: 1px solid #000;
+ width: 10em;
+ padding: 5px;
+ list-style-position: inside;
+ }
+ ul {
+    width: 70%;
+    margin: auto;
+}

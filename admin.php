@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>Welcome Admin!</title>
+	<link = rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="center">
 <?PHP
 
 $login = "admin";
@@ -22,3 +29,6 @@ else
 	echo '</br><a href="login.html">Go back to Login.</a>';
 }
 ?>
+</div>
+</body>
+</html>

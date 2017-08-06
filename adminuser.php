@@ -1,3 +1,11 @@
+<html>
+<head>
+	<title>Modify User</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="center">
+		<h1>ADMIN<br>Please choose from the options below</h1>
 <?PHP
 
 $add = $_POST['Add'];
@@ -29,3 +37,6 @@ if ($del)
 	echo '</html>';
 }
 ?>
+</div>
+</body>
+</html>

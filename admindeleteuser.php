@@ -1,5 +1,4 @@
 <?PHP
-
 $login = $_GET['login'];
 
 if ($login)

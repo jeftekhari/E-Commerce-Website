@@ -1,3 +1,7 @@
+<html>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div class="center">
 <?PHP
 
 $login = $_POST['login'];
@@ -26,14 +30,16 @@ if ($login && $oldpass && $newpass && $submit && $submit == "OK")
 		if ($taken)
 		{
 			file_put_contents('../private/passwd', serialize($contents));
-			echo "OK\n";
+			echo "<h1><br>PASSWORD CHANGED\n</h1>";
 		}
 		else
-			echo "ERROR\n";
+			echo "<h1><br>ERROR Invalid Username or Password\n</h1>";
 	}
 	else
-		echo "ERROR\n";
+		echo "<h1><br>ERROR Invalid Username or Password\n</h1>";
 }
 else
-	echo "ERROR\n";
+	echo "<h1><br>ERROR Please fill in all the fields\n</h1>";
 ?>
+</body>
+</html>
