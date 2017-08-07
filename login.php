@@ -12,7 +12,10 @@
 	if ($_GET["login"] && $_GET["passwd"] && auth($_GET["login"], $_GET["passwd"]))
 	{
 		$_SESSION['loggued_on_user'] = $_GET["login"];
-		echo "OK";
+		echo "<h1>You have Successfully logged in!</h1>";
+		echo '</br><a href="home.html">Go to Home Page?</a>';
+		echo '</br><a href="shop.html">Start Shopping!</a>';
+		echo '</br><a href="basket.php">Check your basket</a>';
 	}
 	else
 	{

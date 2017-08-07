@@ -47,9 +47,10 @@ if ($login && $password && $submit && $submit == "OK")
 		$tmp['passwd'] = hash('whirlpool', $password);
 		$contents[] = $tmp;
 		file_put_contents('../private/passwd', serialize($contents));
-		echo "Congratz! You've created an account!\n";
+		echo "<h1>Congratz! You've created an account!\n</h1>";
 		echo '<html>';
-		echo '</br><a href="login.html">Login Home</a>';
+		echo '</br><a href="home.html">Take me Home</a>';
+		echo '</br><a href="shop.html"> Take to the Shop</a>';
 	}
 }
 else

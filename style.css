@@ -6,6 +6,9 @@ background: linear-gradient(to bottom,  rgba(30,87,153,1) 0%,rgba(125,185,232,1)
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#2989d8',GradientType=0 );
 
 }
+.left{
+	text-align: left;
+}
 .center {
 	text-align: center;
 }
@@ -31,4 +34,33 @@ a{
  ul {
     width: 70%;
     margin: auto;
+}
+.size{
+	height: auto;
+	width: auto;
+}
+
+.textsize{
+	font-size: 20px;
+}
+.mleft{
+	float: left;
+	display: inline-block;
+}
+.mcenter{
+	display: inline-block;
+	float: middle;
+}
+.mright{
+	float: right;
+	display: inline-block;
+}
+.resize{
+	height: 200px;
+	width: 200px;
+}
+.sizeimg{
+background-color: white;
+border: 1px solid black;
+border-radius: 25px;
 }

@@ -41,5 +41,9 @@ if ($login && $oldpass && $newpass && $submit && $submit == "OK")
 else
 	echo "<h1><br>ERROR Please fill in all the fields\n</h1>";
 ?>
+<a href="home.html">Go Home</a><br>
+<a href="shop.html">Start Shopping</a><br>
+<a href="login.html">Return to login page</a>
+</div>
 </body>
 </html>

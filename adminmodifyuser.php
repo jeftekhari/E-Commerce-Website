@@ -1,3 +1,10 @@
+<html>
+<head>
+	<title>adminusermodify</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="center">
 <?PHP
 function auth($login) {
 	if (!file_exists("../private/passwd"))
@@ -24,9 +31,9 @@ $newlogin = $_POST['newlogin'];
 
 if (!auth($oldlogin))
 {
-	echo "No User by that name.";
+	echo "<h1>No User by that name.</h1>";
 	echo '<html>';
-	echo '</br><a href="modifyuser.html">Retry</a></br>';
+	echo '</br><a href="adminmodifyuser.html">Retry</a></br>';
 	echo '<a href="admin.html">Admin Home</a>';
 	echo '</html>';
 }
@@ -51,10 +58,13 @@ else
 	if ($taken)
 	{
 		file_put_contents("../private/passwd", serialize($authentication));
-		echo "OK, Successfully changed.\n";
+		echo "<h1>OK, Successfully changed.\n</h1>";
 		echo '<html>';
 		echo '</br><a href="admin.html">Admin Home</a>';
 		echo '</html>';
 	}
 }
 ?>
+</div>
+</body>
+</html>
