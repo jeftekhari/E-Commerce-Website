@@ -17,6 +17,9 @@ session_start();
 	else
 		echo "<h1>You are not logged in</h1>";
 ?>
+<a href="home.html">Go Home</a><br>
+<a href="login.html">Login</a><br>
+<a href="shop.html">Shop</a><br>
 </div>
 </body>
 </html>
